@@ -23,7 +23,6 @@ butInstall.addEventListener('click', async () => {
 
 // TODO: Add an handler for the `appinstalled` event
 window.addEventListener('appinstalled', (event) => {
-    butInstall.style.visibility = 'hidden';
-    butInstall.textContent = 'Installed!';
-    console.log('👍', 'appinstalled', event);
+    console.log('app was succesfully installed', event)
+    butInstall.style.visibility = 'hidden'
 });
